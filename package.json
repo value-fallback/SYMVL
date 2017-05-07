@@ -1,0 +1,29 @@
+{
+  "name": "symvl",
+  "version": "1.0.0",
+  "description": "Fallback when a value is not Symbol.",
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/value-fallback/SYMVL"
+  },
+  "keywords": [
+    "symbol",
+    "fallback",
+    "value-fallback"
+  ],
+  "author": "Saran Tanpituckpong <sarunta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/value-fallback/SYMVL/issues"
+  },
+  "homepage": "https://github.com/value-fallback/SYMVL",
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-gluons": "^2.0.1",
+    "mocha": "*"
+  }
+}
