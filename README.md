@@ -27,5 +27,22 @@ yarn add symvl
 
 ```javascript
 const symvl = require('symvl');
-...
+
+// When a value is not Symbol, it will return fallback value.
+let a = symvl(null, 0); // a = 0
+let b = symvl({}, 'x'); // b = 'x'
+
+// When a value is Symbol, it will return that value.
+let c = symvl(Symbol(), 1); // c = Symbol()
+let d = symvl(Symbol('SYMBOL'), 'abc'); // d = Symbol(SYMBOL)
 ```
+
+## API
+
+### symvl(value, fallbackValue)
+
+#### value
+A main value.
+
+#### fallbackValue
+A fallback value.
